@@ -1,0 +1,68 @@
+:root {
+    --total-circle: #FFA000;
+    --active-circle: #FB5151;
+    --recovered-circle: #8DF474;
+    --deaths-circle: #494ED8;
+    --title-country-name: black;
+}
+
+.map-container {
+    &__infos {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+        justify-content: space-between;
+    }
+
+    &__flag {
+        max-width: 100%;
+        display: block;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        object-fit: cover;
+    }
+
+    &__country-name {
+        font-weight: bold;
+        margin-left: 3px;
+        font-size: 14px;
+        color: var(--title-country-name) !important;
+    }
+
+    &__cases {
+        display: flex;
+        flex-direction: column;
+        margin-top: 5px;
+        & > div {
+            display: flex;
+            align-items: center;
+        }
+
+        .circle {
+            border-radius: 50%;
+            width: 10px;
+            height: 10px;
+            margin-right: 5px;
+            & + span {
+                font-weight: 600;
+            }
+        }
+
+        .total .circle {
+            background-color: var(--total-circle);
+        }
+
+        .active .circle {
+            background-color: var(--active-circle);
+        }
+
+        .recovered .circle {
+            background-color: var(--recovered-circle);
+        }
+
+        .deaths .circle {
+            background-color: var(--deaths-circle);
+        }
+    }
+}
