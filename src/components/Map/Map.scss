@@ -23,6 +23,7 @@
     background-color: var(--background-map);
     padding: 1rem 1rem 3rem 1rem;
     border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.10);
 
     /* MEDIA QUERIES */
     @media screen and (max-width: 1024px) {

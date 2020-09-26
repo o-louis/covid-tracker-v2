@@ -23,8 +23,6 @@ const Cases = ({ data, evolution }) => {
         recovered: defineStatus(evolution.recovered),
         deaths: defineStatus(evolution.deaths)
     }
-    console.log(evolution);
-    console.log(res);
 
     return (
         <div className="cases-container">
