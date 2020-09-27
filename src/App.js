@@ -113,6 +113,11 @@ function App() {
       <div className="wrapper">
         <div className="container">
         <h1>COVID-19 Coronavirus Tracker</h1>
+        <a className="link-design"
+          href="https://dribbble.com/shots/11027472-Corona-Live-Tracker-Dashboard/attachments/2622043?mode=media" 
+          target="_blank" rel="noopener noreferrer">
+          Inspired by Ram Lakhan design
+        </a>
         <div className="theme" onClick={() => toggleDarkMode(darkMode)}>
           <MoonIcon darkMode={darkMode} />
         </div>
